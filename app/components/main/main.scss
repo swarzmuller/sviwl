@@ -1,0 +1,36 @@
+.main {
+  position: relative;
+  z-index: -1;
+  padding-top: 72px;
+  background: #ECF1F8;
+}
+
+.main__wrapper {
+  display: flex;
+}
+
+.sidebar {
+  width: 350px;
+
+  &__user-info{
+
+  }
+
+  &__statistic {
+
+  }
+
+  &__text {
+
+  }
+}
+
+.content {
+  &__header{
+
+  }
+
+  &__cards {
+
+  }
+}

@@ -1,0 +1,201 @@
+.header-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header {
+  padding: 21px 0;
+  background: #FFFFFF;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.06);
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    margin-bottom: 21px;
+  }
+}
+
+.menu-list {
+  display: flex;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 39px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    opacity: 0.6;
+    color: #3E4056;
+
+    &:hover {
+      opacity: 1;
+
+      &:after {
+        position: absolute;
+        bottom: -21px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+        content: '';
+      }
+    }
+  }
+}
+
+.authorization {
+  display: flex;
+  align-items: center;
+
+  &__name {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: #3E3F58;
+  }
+
+  &__image {
+    position: relative;
+    margin: 0 45px 0 20px;
+
+    &:after {
+      position: absolute;
+      top: 10px;
+      right: -29px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url(../../img/arrow.svg) no-repeat;
+      content: '';
+    }
+  }
+}
+
+.icon-list {
+  display: flex;
+}
+
+.add__block {
+  position: absolute;
+  right: 30px;
+  bottom: -54px;
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 2px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    content:''
+  }
+
+  &:after {
+    width: 20px;
+    height: 2px;
+  }
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+
+  &__item {
+    display: block;
+    height: 4px;
+    width: 25px;
+    background: #3e4056;
+
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+@include r(639){
+
+  .header-wrapper {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header {
+    padding: 10px 0;
+
+    &__menu {
+      width: 100%;
+    }
+
+    &__logo {
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  .menu-list {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+
+    &__item {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__link {
+      &:hover {
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .add__block {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .active__menu {
+    display: block;
+  }
+}
