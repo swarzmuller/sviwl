@@ -1,13 +1,184 @@
 <section class="main">
     <div class="container main__wrapper">
         <div class="sidebar">
-            <div class="sidebar__user-info"></div>
-            <div class="sidebar__statistic"></div>
-            <p class="sidebar__text"></p>
+            <div class="sidebar__description">
+                <img src="img/side_avatar.png" alt="side_avatar">
+                <div class="user-info">
+                    <p class="user-info__title">Benjamin Clementine</p>
+                    <a class="user-info__link" href="#">@benclementine</a>
+                    <div class="user-info__edit">
+                        <svg class="user-info__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <g id="edit icon">
+                                <path id="Combined Shape" fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M10.8963 3.41421C11.6774 2.63316 12.9437 2.63316 13.7248 3.41421L16.5532 6.24264C17.3342 7.02369 17.3342 8.29002 16.5532 9.07107L9.60476 16.0195C9.52246 16.1018 9.41404 16.1528 9.29817 16.1637L5.58247 16.5143C4.32207 16.6332 3.26968 15.566 3.40628 14.3074L3.80158 10.665C3.81388 10.5517 3.86452 10.446 3.94511 10.3654L10.8963 3.41421ZM11.6027 5.53631C11.9932 5.14579 12.6263 5.14579 13.0169 5.53631L14.4311 6.95053C14.8216 7.34105 14.8216 7.97422 14.4311 8.36474L13.7232 9.07263L10.8948 6.2442L11.6027 5.53631ZM9.47978 7.6592L5.9428 11.1962L5.52896 13.2615C5.3887 13.9614 6.00596 14.5787 6.70594 14.4384L8.77123 14.0246L12.3082 10.4876L9.47978 7.6592Z"
+                                      fill="#F05D63"/>
+                            </g>
+                        </svg>
+                        <p>Edit Profile</p>
+                    </div>
+                </div>
+                <div class="sidebar-btn">
+                    <span class="sidebar-btn__item"></span>
+                    <span class="sidebar-btn__item"></span>
+                    <span class="sidebar-btn__item"></span>
+                </div>
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="sidebar-menu__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect opacity="0.01" width="20" height="20" fill="#C3CADF"/>
+                                <path d="M4 17C2.89543 17 2 16.1046 2 15V3C2 1.89543 2.89543 1 4 1H14C15.1046 1 16 1.89543 16 3V4"
+                                      stroke="#3E4056"
+                                      stroke-width="2"/>
+                                <rect x="5" y="4" width="8" height="2" rx="1" fill="#3E4056"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M5 9C5 8.44772 5.44772 8 6 8H10L8 10H6C5.44772 10 5 9.55228 5 9Z"
+                                      fill="#3E4056"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M13.8933 6.92764C14.6743 6.14659 15.9407 6.14659 16.7217 6.92764L19.5501 9.75607C20.3312 10.5371 20.3312 11.8034 19.5501 12.5845L12.6064 19.5282C12.5241 19.6105 12.4156 19.6615 12.2997 19.6724L8.58474 20.0219C7.32474 20.1405 6.27281 19.0737 6.40902 17.8155L6.80325 14.1739C6.81552 14.0605 6.86617 13.9548 6.94679 13.8741L13.8933 6.92764ZM14.6004 9.04896C14.9909 8.65844 15.6241 8.65844 16.0146 9.04896L17.4288 10.4632C17.8193 10.8537 17.8193 11.4869 17.4288 11.8774L16.7217 12.5845L13.8933 9.75607L14.6004 9.04896ZM12.4791 11.1703L8.94404 14.7053L8.53083 16.7702C8.39079 17.47 9.00782 18.087 9.70762 17.9469L11.7725 17.5337L15.3075 13.9987L12.4791 11.1703Z"
+                                      fill="#3E4056"/>
+                            </svg>
+                            <p class="sidebar-menu__text">Report User</p>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect opacity="0.01" width="20" height="20" fill="#ECF1F8"/>
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20"
+                                      height="20">
+                                    <rect width="20" height="20" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M14.9497 14.9497C12.2161 17.6834 7.78392 17.6834 5.05025 14.9497C2.31658 12.2161 2.31658 7.78392 5.05025 5.05025C7.78392 2.31658 12.2161 2.31658 14.9497 5.05025C17.6834 7.78392 17.6834 12.2161 14.9497 14.9497Z"
+                                          stroke="#3E4056" stroke-width="2"/>
+                                    <path d="M7 13L13 7" stroke="#3E4056" stroke-width="2"/>
+                                    <path d="M13 13L7 7" stroke="#3E4056" stroke-width="2"/>
+                                </g>
+                            </svg>
+                            <p class="sidebar-menu__text">Block User</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar__statistic">
+                <div class="statistic-item">
+                    <p class="statistic-item__text statistic-item__bold">45</p>
+                    <p class="statistic-item__text">synths</p>
+                </div>
+                <div class="statistic-item">
+                    <p class="statistic-item__text statistic-item__bold">110</p>
+                    <p class="statistic-item__text">followers</p>
+                </div>
+                <div class="statistic-item">
+                    <p class="statistic-item__text statistic-item__bold">322</p>
+                    <p class="statistic-item__text">following</p>
+                </div>
+            </div>
+            <p class="sidebar__text">
+                Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent
+                each, according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin
+                and Ethereum.
+            </p>
         </div>
         <div class="content">
-            <div class="content__header"></div>
-            <div class="content__cards"></div>
+            <div class="content__header">
+                <p>Public</p>
+                <div class="switcher">
+                    <div class="switcher__btn"></div>
+                </div>
+                <p>Private</p>
+            </div>
+            <div class="content__cards">
+                <div class="card-item">
+                    <p class="card-item__text">
+                        New air routes that promise cheap flights in
+                    </p>
+                    <div class="card-item__info">
+                        <div class="card-item__name">
+                            <div class="card-item__img"></div>
+                            <p>Gregory Watkins</p>
+                        </div>
+                        <div class="card-item__share">
+                            <a class="card-item__link card-item__link-share" href="#">
+                                Share
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <p class="card-item__text">
+                        New air routes that promise cheap flights in
+                    </p>
+                    <div class="card-item__info">
+                        <div class="card-item__name">
+                            <div class="card-item__img"></div>
+                            <p>Gregory Watkins</p>
+                        </div>
+                        <div class="card-item__share">
+                            <a class="card-item__link card-item__link-share" href="#">
+                                Share
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-label">
+                        <p class="card-label__text">Shared to
+                            <a class="card-label__link" href="#">
+                                #discussionaboutanimgttddsasdsadsadsadasdsadasdasdsadasdsdad
+                            </a>
+                        </p>
+                    </div>
+                    <p class="card-item__text">
+                        New air routes that promise cheap flights in
+                    </p>
+                    <div class="card-item__info">
+                        <div class="card-item__name">
+                            <div class="card-item__img"></div>
+                            <p>Gregory Watkins</p>
+                        </div>
+                        <div class="card-item__share">
+                            <a class="card-item__link" href="#">
+                                <img class="share-link" src="img/icon_view.png" alt="">
+                                <span>88</span>
+                            </a>
+                            <a class="card-item__link" href="#">
+                                <img class="share-link" src="img/icon_like.png" alt="">
+                                <span>24</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-label">
+                        <img class="card-label__img" src="img/icon_link.png" alt="icon_link">
+                        <p class="card-label__text">
+                            Shared via weblink
+                        </p>
+                    </div>
+                    <p class="card-item__text">
+                        New air routes that promise cheap flights in
+                    </p>
+                    <div class="card-item__info">
+                        <div class="card-item__name">
+                            <div class="card-item__img"></div>
+                            <p>Gregory Watkins</p>
+                        </div>
+                        <div class="card-item__share">
+                            <a class="card-item__link" href="#">
+                                <img class="share-link" src="img/icon_view.png" alt="">
+                                <span>88</span>
+                            </a>
+                            <a class="card-item__link" href="#">
+                                <img class="share-link" src="img/icon_like.png" alt="">
+                                <span>24</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

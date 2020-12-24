@@ -6,6 +6,8 @@
 }
 
 .header {
+  position: relative;
+  z-index: 1;
   padding: 21px 0;
   background: #FFFFFF;
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.06);
